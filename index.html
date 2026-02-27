@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sri Care Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9ff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #023e8a;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #00b4d8;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-box {
+            background: #caf0f8;
+            margin: 15px;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #023e8a;
+        }
+
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sri Care Hospital</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Sri Care Hospital provides world-class healthcare services with advanced medical technology and experienced doctors.</p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency medical services.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cardiology</h3>
+            <p>Heart specialist treatments.</p>
+        </div>
+        <div class="service-box">
+            <h3>Orthopedics</h3>
+            <p>Bone and joint care services.</p>
+        </div>
+        <div class="service-box">
+            <h3>Laboratory</h3>
+            <p>Advanced diagnostic lab facilities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="doctors">
+    <div class="card">
+        <h2>Our Doctors</h2>
+        <p>👨‍⚕ Dr.Vishwas – Cardiologist</p>
+        <p>👩‍⚕ Dr. Gagana – General Physician</p>
+        <p>👨‍⚕ Dr. Arun – Orthopedic Specialist</p>
+        <button onclick="appointment()">Book Appointment</button>
+        <p id="msg"></p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>📍 Tumkur, Karnataka</p>
+        <p>📞 +91 9876543210</p>
+        <p>📧 sricarehospital@email.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sri Care Hospital | Designed using AI Tools</p>
+</footer>
+
+<script>
+    function appointment() {
+        document.getElementById("msg").innerHTML = "Appointment request submitted successfully!";
+    }
+</script>
+
+</body>
+</html>
